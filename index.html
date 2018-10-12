@@ -11,9 +11,28 @@
     <header class="main-header">
         <h1>Instagram. Or something</h1>
     </header>
-    <div class="picture-area">
+
+    <!-- I need to generate a .thumbnail-item div and img element for every image URL in my images array
+
+            I will append each of those .thumbnail-item divs to the .thumbnail container.
+    -->
+    <div data-container class="picture-area">   <!--  thumbnail-container -->
+        <!-- <div class="thumbnail-item">
+            <img src="https://images.unsplash.com/photo-1523814054436-e89d40de5d40?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=618dc5d751654b8681465ed042dd282d&auto=format&fit=crop&w=2092&q=80" alt="">
+        </div> -->
+        <!-- <div class="thumbnail-item">
+            <img src="https://images.unsplash.com/photo-1523814054436-e89d40de5d40?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=618dc5d751654b8681465ed042dd282d&auto=format&fit=crop&w=2092&q=80" alt="">
+        </div>
+        <div class="thumbnail-item">
+                <img src="https://images.unsplash.com/photo-1523814054436-e89d40de5d40?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=618dc5d751654b8681465ed042dd282d&auto=format&fit=crop&w=2092&q=80" alt="">
+        </div> -->
         <!-- pictures go here -->
     </div>
+        <div class="pictureFrame" alt="">
+            <img data-output src="" alt="">
+            <!-- output for when users clicks a thumbnail. i will modify the src
+              attribute and set it to the same src as the thumbnail that got clicked -->
+        </div>
 
     <script src="index.js"></script>
 </body>
