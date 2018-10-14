@@ -34,16 +34,17 @@ body {
 .thumbnail-item {
    width: 33%;
     /* max-width: 30%; */
-    height: 150px;
+    /* height: 300px; */
     /* max-height: 150px; */
     padding-bottom: 5px;
 }
 
 .thumbnail-item > img {
-/* choose either height or width not both */
-    max-height: 100%;
+    /* choose either height or width not both */
     max-width: 100%;
     text-align: center;
+    /* border: 2px solid white; */
+    /* max-height: 100%; */
     /* margin: 20px; */
     /* height: 100%; */
 }
@@ -59,7 +60,9 @@ body {
     max-height: 100%;
 }
 
+
+/* on hover effect for thumbnails*/
 .thumbnail-item  img:hover {
-    outline: 3px solid crimson;
+    /* outline: 3px solid crimson; */
     opacity: 0.5;
 }
