@@ -44,10 +44,12 @@ function createImage(imageURL){
     theImage.addEventListener('click', (event) =>{
         const bigPicture = document.querySelector('[data-output]');
         bigPicture.setAttribute('src',event.target.src);
+        theImage.setAttribute('class', 'selectedImg');
     })
-
-
+    
+    
     return theImage;
+
 }
 
 //function that generates thumbnail div

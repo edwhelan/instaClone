@@ -13,14 +13,17 @@ html, body {
 }
 
 body {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
+    background-color: cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+
 }
 
 .main-header {
     height: 50px;
 }
+
 .picture-area {
     display: flex;
     flex-direction: row;
@@ -29,10 +32,11 @@ body {
 
 }
 .thumbnail-item {
-   width: 30%;
+   width: 33%;
     /* max-width: 30%; */
     height: 150px;
     /* max-height: 150px; */
+    padding-bottom: 5px;
 }
 
 .thumbnail-item > img {
@@ -53,4 +57,9 @@ body {
 .pictureFrame > img {
     max-width: 100%;
     max-height: 100%;
+}
+
+.thumbnail-item  img:hover {
+    outline: 3px solid crimson;
+    opacity: 0.5;
 }
