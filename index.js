@@ -26,6 +26,7 @@ function makeTheThumbnails(arr){
     const target = document.querySelector('[data-container]')
 arr.forEach(function(element) {
     target.appendChild(createThumbnail(element));
+
 });
 }
 
@@ -36,6 +37,16 @@ makeTheThumbnails(userPictures);
 function createImage(imageURL){
     const theImage = document.createElement('img');
     theImage.setAttribute('src', imageURL);
+
+
+    //event listener for generated images to allow user to select one
+    //after selection the image is added to bottom area in a 'full size fashion'
+    theImage.addEventListener('click', (event) =>{
+        const bigPicture = document.querySelector('[data-output]');
+        bigPicture.setAttribute('src',event.target.src);
+    })
+
+
     return theImage;
 }
 
@@ -47,4 +58,9 @@ function createThumbnail(url){
     return theContainer;
 }
 
-// document.querySelector('[]')
+// Make Large preview area bellow bassed off of event listener on click
+
+//add event listener for click of a image div. Console log the url to ensure it works.
+
+// const targetToBlowUp = document.querySelector('thumbnail-item');
+// targetToBlowUp.addEventListener('click', () => console.log('Yee it work'), false);
