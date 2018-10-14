@@ -19,16 +19,17 @@ const userPictures = [
     `https://images.unsplash.com/photo-1523814054436-e89d40de5d40?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=618dc5d751654b8681465ed042dd282d&auto=format&fit=crop&w=2092&q=80`
 ]
 
+// addEventListener
 
-
-// make img thumbnails
+// populate thumbnails inside divs made from functions below.
 function makeTheThumbnails(arr){
     const target = document.querySelector('[data-container]')
-arr.forEach(function() {
-    target.appendChild(createThumbnail(arr))
+arr.forEach(function(element) {
+    target.appendChild(createThumbnail(element));
 });
 }
 
+//Make thumbnails for users bassed off array passed in
 makeTheThumbnails(userPictures);
 
 //function that generates img element
